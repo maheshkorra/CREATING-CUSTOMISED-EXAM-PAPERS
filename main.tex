@@ -1,0 +1,61 @@
+\documentclass{exam}
+\usepackage{multicol}
+\usepackage{circuitikz}
+\ctikzset{bipoles/length=0.8cm}
+\begin{document}
+\centering
+{\bf \LARGE Basics Electrical Engineering - Exam}
+\vspace{1cm} \hrule  \vspace{0.5cm}
+Student name: \hfill Roll.no. \hfill Code: ABCDE
+\vspace{0.5cm} \hrule \vspace{0.5cm}
+\begin{multicols}{2}
+\begin{questions}
+
+
+\section{DC Circuits}
+\question Two resistors 28 $\Omega$ and 14 $\Omega$ are in parallel. This combination is in turn connected in series with another resistance of value 6 $\Omega$. Further this entire combination is connected in parallel to another resistance of 16 $\Omega$. Find the effective resistance of the above circuit.
+\answerline
+\question In the figure below the value of R in Ohms is
+\begin{circuitikz}
+\draw (0,2) to [ battery1, l_=25v] (0,0);
+\draw (0,2) to [R,l=20 $\Omega$] (2,2)
+            to [R,l=20 $\Omega$] (2,0)
+            -- (0,0);
+\draw (2,2) to [short,i=50A] (4,2)
+            to [R,l=R] (4,0)
+            -- (2,0);
+\end{circuitikz}
+\answerline
+
+
+\section {AC Circuits}
+\question An impedance of (10+j9) $\Omega$ is connected in parallel with another in impedance of (29-j20) $\Omega$. Determine the effective impedance of the circuit.
+\answerline
+\question For the circuit shown below find the value of current $I$ in polar form
+\begin{circuitikz}
+\draw (0,0) to [short,i=$I$] (0,2)
+            to [R,l=10 $\Omega$] (2,2)
+            to [L,l=0.20 H] (4,2)
+            to [C, l=60 $\mu F$] (6,2)
+            -- (6,0)
+            to [sV,label={100 v 50 Hz}] (0,0);
+\end{circuitikz}
+\answerline
+
+\section{Induction Motors}
+\question 
+\answerline
+\question
+\answerline
+
+\section{Transformers}
+\question
+\answerline
+\question
+\answerline
+
+\end{questions}
+\end{multicols}
+\vspace{1cm}
+\centering{*** All The Best ***}
+\end{document}

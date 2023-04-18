@@ -1,0 +1,26 @@
+\question For the circuit shown below find the value of current $I$ in polar form
+\begin{circuitikz}
+\draw (0,0) to [short,i=$I$] (0,2)
+            to [R,l=--r-- $\Omega$] (2,2)
+            to [L,l=--l-- H] (4,2)
+            to [C, l=--c-- $\mu F$] (6,2)
+            -- (6,0)
+            to [sV,label={100 v 50 Hz}] (0,0);
+\end{circuitikz}
+\answerline
+
+\begin{solution}
+The reactance of inductor = $X_L = 2\pi fL = 2*\pi*50*--l-- = --xl-- \Omega$.
+
+The reactance of capacitor = $X_C = 1/(2\pi fC) =  1/(2*\pi*50*--c--*10^{-6}) = -j--xc-- \Omega$.
+
+The net impedence = $R+j(X_L - X_C) = --r-- +j(--xl-- - --xc--) = (--r-- + j(--xn--))$
+
+Current $I = V/Z = 100 / \sqrt{((--r--)^2 + (--xn--)^2)}
+  = 100/--z-- = --i-- A$
+
+phase of current $I = \tan^-1\frac{--xn--}{--r--} = --phase-- $ deg
+
+Current in polar form = $ --i-- \angle --phase-- $ deg
+
+\end{solution}

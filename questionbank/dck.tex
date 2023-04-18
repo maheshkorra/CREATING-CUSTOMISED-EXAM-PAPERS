@@ -1,0 +1,11 @@
+\question In the figure below the value of R in Ohms is
+\begin{circuitikz}
+\draw (0,2) to [ battery1, l_=--v--V] (0,0);
+\draw (0,2) to [R,l=--r1-- $\Omega$] (2,2)
+            to [R,l=--r2-- $\Omega$] (2,0)
+            -- (0,0);
+\draw (2,2) to [short,i=--i--A] (4,2)
+            to [R,l=R] (4,0)
+            -- (2,0);
+\end{circuitikz}
+\answerline
